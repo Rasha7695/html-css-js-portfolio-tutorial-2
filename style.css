@@ -17,6 +17,9 @@ html {
 
 p {
   color: rgb(85, 85, 85);
+  /* color: white; */
+  /* color: hsl(74, 93%, 32%); */
+
 }
 
 /* TRANSITION */
@@ -52,14 +55,21 @@ a {
 }
 
 a:hover {
-  color: grey;
+  /* transform: scale(2); */
+  /* color: grey; */
+    /* color: hsl(74, 93%, 32%); */
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  /* text-decoration-color: rgb(181, 181, 181); */
+  /* text-decoration-color: hsl(74, 93%, 32%); */
+  text-decoration-color: hsl(74, 93%, 32%);
 }
 
 .logo {
-  font-size: 2rem;
+  font-family: monospace;
+  font-size: 1.5rem;
+  /* color: hsl(74, 93%, 27%); */
+  color: hsl(327, 50%, 60%);
 }
 
 .logo:hover {
@@ -150,12 +160,15 @@ a:hover {
 
 section {
   padding-top: 4vh;
-  height: 96vh;
+  /* height: 96vh; */
+  min-height: 100vh;
+  max-height: 100vh;
   margin: 0 10rem;
   /* margin-top: 500px;
   margin-bottom: auto; */
   box-sizing: border-box;
-  min-height: fit-content;
+  /* min-height: fit-content; */
+
 }
 
 .section-container {
@@ -169,6 +182,7 @@ section {
   justify-content: center;
   gap: 5rem;
   height: 60vh;
+  padding-bottom: 10%;
   margin-bottom: 5%;
 }
 
@@ -177,6 +191,11 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+  border-color:hsl(327, 50%, 60%);
+  border-style:solid;
+  border-radius: 50%;
+  clip-path: circle();
+
 }
 
 .section__text {
@@ -189,6 +208,7 @@ section {
 }
 
 .section__text__p1 {
+  /* color: hsl(74, 93%, 32%); */
   text-align: center;
 }
 
@@ -196,10 +216,18 @@ section {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
+.section__text__p3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  /* color: hsl(327, 50%, 60%); */
+  color: hsl(74, 93%, 32%);
+  text-align: center;
+}
 
 .title {
   font-size: 3rem;
   text-align: center;
+  /* color: hsl(327, 50%, 60%); */
 }
 
 #socials-container {
@@ -249,7 +277,11 @@ section {
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  /* background: rgb(0, 0, 0); */
+  /* background: hsl(74, 70%, 39%); */
+  /* background: hsl(74, 93%, 32%); */
+  background:  hsl(327, 50%, 60%);
+  border-color: white;
 }
 
 .btn-color-2 {
@@ -257,7 +289,10 @@ section {
 }
 
 .btn-color-2:hover {
-  border: rgb(255, 255, 255) 0.1rem solid;
+  /* border: rgb(255, 255, 255) 0.1rem solid; */
+  /* background: hsl(74, 93%, 32%); */
+  background: hsl(327, 50%, 60%);
+  border-color: white;
 }
 
 .btn-container {
@@ -268,11 +303,14 @@ section {
 
 #about {
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  align-items: center; */
+
+   /* display: flex; */
+   /* justify-content: center;
+   padding-bottom: 10%; */
+  /* flex-direction: column;
+  align-items: center; */ */
   /* height: 60%; */
-  padding-top: 10%;
+  /* padding-top: 10%; */
   /* height: 100vh; */
 
   /* height: 80vh; */
@@ -308,7 +346,6 @@ section {
 .text-container {
   text-align: center;
   font-size: larger;
-
 }
 
 .about-containers,
@@ -324,6 +361,9 @@ section {
   position: absolute;
   right: -5rem;
   bottom: 2.5rem;
+  width: 200px;
+  height: 200px;
+  /* color: hsl(327, 50%, 60%); */
 }
 
 .details-container {
@@ -333,6 +373,7 @@ section {
   border-radius: 2rem;
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
+  /* border-color:hsl(74, 93%, 32%); */
   text-align: center;
   /* margin: auto; */
 }
@@ -365,6 +406,7 @@ section {
 
 .color-container {
   border-color: rgb(163, 163, 163);
+  /* border-color: hsl(74, 93%, 32%); */
   background: rgb(250, 250, 250);
 }
 
@@ -388,8 +430,6 @@ section {
 
 #experience {
   position: relative;
-  padding-top: 10%;
-
 }
 
 .experience-sub-title {
